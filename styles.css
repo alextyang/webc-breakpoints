@@ -61,7 +61,7 @@ p a:hover {
 }
 
 img.dec {
-  z-index: -1;
+  z-index: -10;
   position: absolute;
 }
 
@@ -92,57 +92,6 @@ p {
 
 
 
-/* Home Page */
-
-  /* Home Page Header */
-
-  .siteTitle {
-    margin: 100px 0;
-  }
-
-  .siteTitle h2 {
-    font-size: 8em;
-    color: #FBF4CF;
-    margin-bottom: 0;
-  }
-
-  .siteTitle h4 {
-    margin-top: 0;
-  }
-
-  /* Home Page Grid */
-
-  .menuSec {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 100px;
-  }
-
-  .menuItem div {
-    margin: 50px;
-    width: 300px;
-    height: 300px;
-  }
-
-  .menuItem div img {
-    width:100%;
-  }
-
-  /* Home Page Decoration */
-
-  .homeDec1 {
-    top:12em;
-    left:62vw;
-  }
-
-  .homeDec2 {
-    top:-10em;
-    left:-300px;
-    transform: rotate(0turn);
-  }
-
 /* Content Page */
 
   /* Content Header */
@@ -157,6 +106,24 @@ p {
 
   .pageTitle h2 {
     margin-top: 0;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .bandaid {
+      width: 75vw;
+      margin-bottom: 10vw;
+    }
+
+    h1 {
+      font-size: 6em;
+    }
+
+    h2 {
+      font-size: 5.5em;
+    }
+  }
+
+  .bandaid {
   }
 
   /* Content Grid */
@@ -206,6 +173,33 @@ p {
     width: 80%;
   }
 
+  @media only screen and (max-width: 700px) {
+    .infoGrid {
+      display: grid;
+      grid-template-columns: 30px auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: 200px;
+    }
+
+    .offset1 {
+      grid-row-start: 4;
+    }
+
+    .offset2 {
+      grid-row-start: 8;
+    }
+
+    .solutionGrid {
+      display: grid;
+      grid-template-columns: 30px auto;
+      grid-template-rows: auto auto;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
   /* Line */
 
   .dot {
@@ -245,6 +239,37 @@ p {
     position: relative;
   }
 
+  .lineExtension {
+    display: none;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .line.lineExtension {
+      display: unset;
+      position: absolute;
+      border-left: none;
+      border-right: 3px solid #9F0000;
+      border-bottom: 3px solid #9F0000;
+      top: -162px;
+      width: 38vw;
+      height: 160px;
+
+    }
+
+    div.infoGrid div.line span.dot.topDot {
+      top: -185px;
+      left: 35vw;
+    }
+
+    .line {
+      height: 100%;
+      margin-top: 5px;
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+
+  }
+
   .stitches {
     position: absolute;
     display: flex;
@@ -280,11 +305,6 @@ p {
     left: 75vw;
   }
 
-  .pestDec1 {
-    top: 100em;
-    left: 75vw;
-  }
-
   .polDec2 {
     top:20em;
     right:70vw;
@@ -295,12 +315,19 @@ p {
     right:60vw;
   }
 
-  .pestDec3 {
-    width:1000px;
-    top:130em;
-    right:60vw;
-  }
+  @media only screen and (max-width: 700px) {
+    .polDec1 {
+      left: 60vw;
+    }
 
+    .polDec2 {
+      right: 50vw;
+    }
+
+    .polDec3 {
+      right: 30vw;
+    }
+  }
 
 
 
