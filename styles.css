@@ -1,0 +1,311 @@
+
+/* Site Styles */
+
+body {
+  background-color: #0F0A0A;
+  min-height: 1000px;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+h1 {
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 8em;
+  color: #FBF4CF;
+  margin: .25em .10em;
+}
+
+h2 {
+  font-family: boucherie-block, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 7em;
+  color: #9F0000;
+  margin: .25em .10em;
+}
+
+h3 {
+  font-family: boucherie-block, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3em;
+  color: #FBF4CF;
+  margin: .25em .10em;
+}
+
+h4 {
+  font-family: blonde-fraktur, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7em;
+  color: #9F0000;
+  margin: .25em .10em;
+}
+
+a {
+  text-decoration: none;
+  cursor:pointer;
+}
+
+p a {
+  color: #D1816C;
+}
+
+p a:hover {
+  color: #6B587C;
+}
+
+img.dec {
+  z-index: -1;
+  position: absolute;
+}
+
+/* Site Format */
+
+body {
+  text-align: center;
+}
+
+.content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1em;
+  line-height: 1.4em;
+
+  text-align: left;
+  margin: 2em;
+
+  color: #FBF4CF;
+}
+
+
+
+/* Home Page */
+
+  /* Home Page Header */
+
+  .siteTitle {
+    margin: 100px 0;
+  }
+
+  .siteTitle h2 {
+    font-size: 8em;
+    color: #FBF4CF;
+    margin-bottom: 0;
+  }
+
+  .siteTitle h4 {
+    margin-top: 0;
+  }
+
+  /* Home Page Grid */
+
+  .menuSec {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .menuItem div {
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .menuItem div img {
+    width:100%;
+  }
+
+  /* Home Page Decoration */
+
+  .homeDec1 {
+    top:12em;
+    left:62vw;
+  }
+
+  .homeDec2 {
+    top:-10em;
+    left:-300px;
+    transform: rotate(0turn);
+  }
+
+/* Content Page */
+
+  /* Content Header */
+
+  .pageTitle {
+    margin: 100px 0;
+  }
+
+  .pageTitle h1 {
+    margin-bottom: 0;
+  }
+
+  .pageTitle h2 {
+    margin-top: 0;
+  }
+
+  /* Content Grid */
+
+  .infoGrid {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin-bottom: 200px;
+  }
+
+  .infoGrid p {
+    align-self: stretch;
+    justify-self: stretch;
+  }
+
+  .infoGrid img {
+    align-self: stretch;
+    justify-self: stretch;
+    margin: 2em;
+    margin-bottom: 4em;
+    object-fit:cover;
+    width: 80%;
+  }
+
+  .solutionGrid {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: 500px;
+    margin: 100px 0 200px 0;
+  }
+
+  .solutionGrid {
+    grid-template-rows: auto;
+  }
+
+  .solutionGrid p {
+    align-self: stretch;
+    justify-self: stretch;
+  }
+
+  .solutionGrid img {
+    align-self: stretch;
+    justify-self: stretch;
+    margin: 2em;
+    object-fit:cover;
+    width: 80%;
+  }
+
+  /* Line */
+
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #1F1F1F00;
+    border-radius: 50%;
+    border: 3px solid #9F0000;
+    display: inline-block;
+    position: absolute;
+  }
+
+  .dot.topDot {
+    top: -30px;
+    left: -16.5px;
+  }
+
+  .dot.bottomDot {
+    bottom: -30px;
+    left: -16.5px;
+  }
+
+  .line {
+    box-sizing: border-box;
+    border-left: 3px solid #9F0000;
+    width: 1px;
+    height: 120%;
+    margin-top: -275px;
+
+    z-index: -1;
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: end;
+    justify-self: center;
+    position: relative;
+  }
+
+  .stitches {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .stitches p{
+    margin: 0;
+    font-size: 45px;
+    margin-left: -19px;
+  }
+
+  .solutionGrid .line {
+    margin-top: 0;
+    height: 110%;
+    border-left: 3px solid #FBF4CF;
+  }
+
+  .solutionGrid .line .dot {
+    border: 3px solid #FBF4CF;
+  }
+
+  .backButton h3 {
+    margin-bottom: 100px;
+  }
+
+  /* Decoration */
+
+  .polDec1 {
+    top: 40em;
+    left: 75vw;
+  }
+
+  .pestDec1 {
+    top: 100em;
+    left: 75vw;
+  }
+
+  .polDec2 {
+    top:20em;
+    right:70vw;
+  }
+
+  .polDec3 {
+    top:120em;
+    right:60vw;
+  }
+
+  .pestDec3 {
+    width:1000px;
+    top:130em;
+    right:60vw;
+  }
+
+
+
+
+
+
+
+
+/* Alex Yang */
